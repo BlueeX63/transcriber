@@ -1,6 +1,6 @@
 # Transcriber - AI Audio Transcription Platform
 
-Transcriber is a full-stack, production-ready web application built with Next.js 16. It leverages Google's advanced **Gemini 2.5 Flash** AI model to automatically transcribe large audio files into highly accurate text. It features a secure administrative dashboard, a persistent PostgreSQL database using Prisma ORM, and robust JSON Web Token (JWT) authentication.
+Hey,Transcriber is a full-stack, production-ready web application built with Next.js 16. It leverages Google's advanced **Gemini 2.5 Flash** AI model to automatically transcribe large audio files into highly accurate text. It features a secure administrative dashboard, a persistent PostgreSQL database using Prisma ORM, and robust JSON Web Token (JWT) authentication.
 
 ## Features
 - **AI-Powered Transcription:** Upload audio files directly from the browser to Google's Gemini AI for fast and incredibly accurate text transcription.
