@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Transcriptor",
-  description: "Transcriptor is a tool for transcribing audio files.",
+  title: "Transcriber",
+  description: "Transcriber is a tool for transcribing audio files.",
 };
 
 export default function RootLayout({
