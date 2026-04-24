@@ -12,7 +12,7 @@ const fileManager = new GoogleAIFileManager(process.env.GEMINI_API_KEY as string
 
 export async function POST(request: Request) {
   let tempFilePath = '';
-  let uploadedFileUri = '';
+  let uploadedFileName = '';
   
   try {
     const formData = await request.formData();
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       mimeType: file.type || 'audio/mpeg',
       displayName: title,
     });
-    uploadedFileUri = uploadResult.file.uri;
+    uploadedFileName = uploadResult.file.name;
 
     // Call Gemini to transcribe
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
@@ -75,8 +75,8 @@ export async function POST(request: Request) {
     if (tempFilePath) {
       try { await unlink(tempFilePath); } catch (e) {}
     }
-    if (uploadedFileUri) {
-      try { await fileManager.deleteFile(uploadedFileUri.split('/').pop()!); } catch (e) {}
+    if (uploadedFileName) {
+      try { await fileManager.deleteFile(uploadedFileName); } catch (e) {}
     }
   }
 }
