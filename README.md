@@ -27,8 +27,8 @@ GEMINI_API_KEY="your_google_gemini_api_key"
 
 # Security
 JWT_SECRET="a_very_long_secure_random_string"
-ADMIN_USERNAME="admin"
-ADMIN_PASSWORD="securepassword123"
+ADMIN_USERNAME="bhavit"
+ADMIN_PASSWORD="password"
 ```
 
 ### 3. Install Dependencies & Setup Database
