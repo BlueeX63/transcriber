@@ -39,8 +39,7 @@ export default function TranscriptsList({ transcripts }: { transcripts: Transcri
   };
 
   const filteredTranscripts = transcripts.filter(t => 
-    t.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-    t.text.toLowerCase().includes(searchQuery.toLowerCase())
+    t.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
